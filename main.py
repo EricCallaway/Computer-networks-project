@@ -55,15 +55,6 @@ def get_data():
     
     print(tickers)
 
-main()
-
-
-
-
-
-
-
-
 #Define time frame
 
 def candlestick():
@@ -99,5 +90,16 @@ def candlestick():
     plt.show()
 
     print(data.head())
+
+main()
+
+
+
+
+
+
+
+
+
 
 
