@@ -9,15 +9,15 @@ from PIL import ImageTk,Image
 from mpl_finance import candlestick_ohlc
 
 def main():
-    get_data()
-    selection()
+    tickers = get_data()
+    selection(tickers)
     candlestick()
 
 
 
 
 # Select a company
-def selection():
+def selection(tickers):
 
     root = Tk()
     root.title("Eric's stock picking program!")
@@ -54,6 +54,7 @@ def get_data():
 
     
     print(tickers)
+    return tickers
 
 #Define time frame
 
